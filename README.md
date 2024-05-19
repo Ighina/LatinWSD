@@ -3,7 +3,12 @@ Code for the paper "Language Pivoting from Parallel Corpora for Word Sense Disam
 
 ## Basic Usage
 ### Downloading Model and tokenizer
-In order to use the code, first download the relevant Latin BERT model and tokenizer from [the relevant repository](https://github.com/dbamman/latin-bert/tree/master/models/subword_tokenizer_latin). For the Latin BERT model, follow the instruction in the [repository](https://github.com/dbamman/latin-bert) to download it. Move both the latin.subword.encoder and the latin_bert folder into base_models.
+In order to use the code, first download the relevant Latin BERT model and tokenizer from [the relevant repository](https://github.com/dbamman/latin-bert/tree/master/models/subword_tokenizer_latin). For the Latin BERT model, follow the instruction in the [repository](https://github.com/dbamman/latin-bert) to download it. 
+Create the "base_models" folder with:
+```
+mkdir base_models
+```
+Move both the latin.subword.encoder and the latin_bert folder into base_models.
 
 ### Installing libraries
 Install the required libraries into your environment with:
