@@ -16,6 +16,12 @@ Install the required libraries into your environment with:
 pip install -r requirements.txt
 ```
 
+### Language Pivoting
+The languege pivoting approach described in the paper has been performed by first preprocessing the [Dynamic Lexicon Latin-English parallel corpus](https://github.com/PerseusDL/dynamic-lexicon/tree/master/data/auto-aligned-parallel-txts/latinParallelText) with the scripts available in preprocess folder.
+Once obtained the final csv file from the preprocessing, the English column is passed through [AMuSE WSD system](https://github.com/PerseusDL/dynamic-lexicon/tree/master/data/auto-aligned-parallel-txts/latinParallelText) and the annotations were propagated with one of the two methods described in the paper (for the align method, we use the target word column in the csv file to identify the English lemma corresponding to the target Latin one).
+
+Finally, the datasets thus obtained are stored in the data folder of this repository.
+
 ### Run the main script
 To fine-tune LatinBERT models on all the target lemmas from semeval dataset with the addition of the Pers_inter data run:
 ```
